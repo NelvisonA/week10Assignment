@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom it Up!</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--setting up container-->
+<body class="container">
+    
+    <!--making the table-->
+    <table class="table table-sm table-bordered">
+        <h3 class="d-flex justify-content-center">Movie List!</h3>
+        
+        <p>Add movies in order of best to worst.</p>
+        
+        <thead>
+            <!--table header-->
+            <tr class="table-dark">
+                <th scope="col">Placement</th>
+                <th scope="col">Movie</th>
+            </tr>
+
+        </thead>
+        <!--where we will be adding movies to table plus their placement num-->
+        <tbody id="table-body">
+            
+        </tbody>
+
+        
+    </table>
+
+    <form>
+        <!--the input box and button-->
+        <div class="input-group w-25">
+            <input type="text" id="text-value" class="form-control" placeholder="Add to list" aria-label="Add to list">
+            <button id="form-submit" class="btn btn-outline-secondary" type="button">Submit</button>
+        </div>
+        
+    </form>
+
+
+
+    <script src="/index.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
